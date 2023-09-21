@@ -17,9 +17,9 @@ servers:
     description: Development server
 tags:
   - name: books
-    description: Borrow Book API
+    description: Operations about books and borrow/return
   - name: members
-    description: Operations about user
+    description: Operations about members
 paths:
   /books/:
     get:
@@ -185,7 +185,7 @@ components:
         name: '##default'
   requestBodies:
     BorrowReturnBook:
-      description: Borrow and Return Book object that needs to be added to the store
+      description: Borrow and Return Book object that needs to be added
       content:
         application/json:
           schema:
